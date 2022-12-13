@@ -18,3 +18,19 @@ CRUD é (CREATE, READ, UPDATE, DELETE) e foram desenvolvidos cada um dos método
 - [READ] Operações de leitura no banco de dados, como buscar por todos os produtos cadastrados, buscar por nome etc.
 - [UPDATE] Operações de atualizar determinada categoria e produto.
 - [DELETE] Operações de remover determinada categoria e produto.
+
+## Outras utilidades do JPA Hibernate
+
+JPA Hibernate tem muitas outras aplicações interessantes para trabalhar conforme a modelagem do banco de dados.
+Por exemplo, mapear relacionamento bidirecional e fazer consulta utilzando função de agregação, ex: min, max, sum etc.
+
+Por meio de anotações é possível otimizar a aplicação. Por padrão quando relação é ManyToOne, quando for iniciar a
+aplicação, a estratégia por baixo dos panos será a EAGER. Isso acarreta em carregas todas as tabelas que está no relacionamento.
+Utilizando anotações, é possível usufruir da estratégia LAZY, com isso, será carregada apenas a tabela que está sendo chamada,
+assim otimizando consideravelmente a aplicação.
+
+Também é possível realizar herança entre entidades por meio de anotações e mapear chave composta.
+
+
+
+

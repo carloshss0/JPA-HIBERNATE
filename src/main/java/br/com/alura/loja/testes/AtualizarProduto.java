@@ -15,7 +15,7 @@ public class AtualizarProduto {
 
         Produto produto = produtoDao.buscarPorId(id);
         em.getTransaction().begin();
-        produtoDao.atualizarProduto(produto);
+        produtoDao.atualizar(produto);
         produto.setPreco(new BigDecimal("1000"));
         em.getTransaction().commit();
         em.close();
